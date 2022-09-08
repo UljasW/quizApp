@@ -1,12 +1,24 @@
-import logo from './logo.svg';
-import './header.css';
+import React from 'react'
+import Button from 'react-bootstrap/Button';
 
-function header() {
+
+export default function header() {
   return (
-    <header>
+    <div style={{ height: "100px", background: "black", display: "flex", flexDirection: "row", justifyContent: "center" }}>
+      <div style={{ display: "flex", with: "500px"}}>
+        <Button variant="primary" className='btn'>
+          Home
+        </Button>
+        <Button variant="primary" className='btn'>
+          Create Quiz
+        </Button>
+        <Button variant="primary" className='btn'>
+          Sign In
+        </Button>
+      </div>
 
-    </header>
-  );
+
+    </div>
+
+  )
 }
-
-export default header;
