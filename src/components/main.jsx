@@ -3,10 +3,10 @@ import QuizWidget from './quizWidget'
 
 
 
-export default function main() {
+export default function Main() {
   return (
     <div>
-
+      <QuizWidget />
     </div>
   )
 }

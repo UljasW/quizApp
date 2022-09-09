@@ -1,7 +1,20 @@
-import React from 'react'
+import React from "react";
+import { useState, useEffect } from "react";
 
-export default function quizWidget() {
+export default function QuizWidget() {
+  const [allQuizes, setAllQuizes] = useState([]);
+
+  function FetchData() {
+    setAllQuizes(["3", "3", "3", "3", "3", "3", "3"]);
+  }
+
+  useEffect(() => {
+    FetchData();
+  }, []);
+
   return (
-    <div>quizWidget</div>
-  )
+    <>
+      {allQuizes.map((quiz) => <div>{quiz}</div>)}
+    </>
+  );
 }
